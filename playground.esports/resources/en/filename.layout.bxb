@@ -1,0 +1,19 @@
+layout {
+  match: Leauge_search (this)
+  mode (Summary)
+
+  content {
+    section {
+      content {
+       paragraph {
+          value ("#{value(this.start_date)}")
+          style (Title_L)
+        }
+          
+        // image {
+        //   url("#value(this.image_URL)")
+        // }         
+      } 
+    }
+  }
+}

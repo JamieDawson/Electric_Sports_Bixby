@@ -9,7 +9,7 @@ structure (Leauge_search) {
   }
   
   //Image for Compitition
-  property (image) {
+  property (image_URL) {
     type (image.Image)
     min (Optional) max (One)
     visibility (Private)
