@@ -5,14 +5,24 @@ layout {
   content {
     section {
       content {
-       paragraph {
-          value ("#{value(this.start_date)}")
-          style (Title_L)
-        }
+      
+       ////////Find start date! 
+       // paragraph {
+       //    value ("#{value(this.start_date)}")
+       //    style (Title_L)
+       //  }
+        
+       ////////Find name of leauge! 
+        // paragraph {
+        //    value ("#{value(this.leauge_name)}")
+        //    style (Title_L)
+        //  }
           
-        // image {
-        //   url("#value(this.image_URL)")
-        // }         
+          
+        ////////find image NOT WORKING
+      //  image {
+      //    url("#value(this.image_URL)")
+      //  }         
       } 
     }
   }

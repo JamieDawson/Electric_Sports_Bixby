@@ -26,6 +26,7 @@ module.exports.function = function my_search (games) {
     }
     results.push(template)
     j++;
+    console.log(tmpResults[i].image_url)
   }
   return results;
 }
