@@ -1,0 +1,16 @@
+action (My_search) {
+  type(Search)
+  description (searches through API and returns info)
+  collect {
+    input (games) {
+      type (My_text_concept)
+      min (Optional) max (One)
+    }
+  }
+  output (Leauge_search)
+}
+
+
+//Name of the compitition
+//Image of the compitition
+//Startdate of the compitition 

@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (My_search) {
+      accepted-inputs (games)
+      local-endpoint ("my_search.js")
+    }
+  }
+}

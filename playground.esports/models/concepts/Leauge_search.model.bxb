@@ -1,0 +1,25 @@
+structure (Leauge_search) {
+  description (Looks up all the leauges)
+  
+  //Name of compitition
+  property (leauge_name) { 
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+  
+  //Image for Compitition
+  property (image) {
+    type (image.Image)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+  
+  //Start date for Compitiion 
+  property (start_date) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+}
+
