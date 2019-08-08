@@ -67,6 +67,7 @@ module.exports.function = function my_search (games) {
   //If user request counter strike
   else if (games == "counter strike" || games == "Counter Strike") //checks if human says dota 2
   {
+    //console.log("COUNTER STRIKE HERE!!!")
     for (var i = 0; i < tmpResults.length; i++) {
       if (j == 60)
         break
@@ -89,6 +90,38 @@ module.exports.function = function my_search (games) {
       }
     }
   }
+  
+  
+  
+   //If user request counter strike
+  else if (games == "league of legends" || games == "League of Legends") //checks if human says dota 2
+  {
+    console.log("LEAGUE OF LEGENDS!!!")
+    for (var i = 0; i < tmpResults.length; i++) {
+      if (j == 60)
+        break
+      if (tmpResults[i].videogame.name == "LoL"){ //checks json has "Dota 2"
+      var date = tmpResults[i].series[0]
+      
+    if(typeof(tmpResults[i].series[0]) !== "undefined") { //Checks if it has a series object.
+      template = {
+         leauge_name: tmpResults[i].name,
+        image_URL: {
+          url: tmpResults[i].image_url 
+        },
+          start_date: date.begin_at
+      }
+     }
+        
+      if(typeof(tmpResults[i].series[0]) !== "undefined")
+        results.push(template)
+      j++;
+      }
+    }
+  }
+  
+  
+  
   
   
   
