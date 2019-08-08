@@ -10,14 +10,12 @@ module.exports.function = function my_search (games) {
   tmpResults = JSON.parse(tmpResults) 
   var j = 1;
   
-  if (games == "overwatch")
-    console.log("found overwatch")
   
   //If user request Overwatch Leagues!
   if (games == "Overwatch" || games == "overwatch")
   {
     for (var i = 0; i < tmpResults.length; i++) {
-      if (j == 20)
+      if (j == 40)
         break
       if (tmpResults[i].videogame.name == "Overwatch"){   
       var date = tmpResults[i].series[0]
@@ -32,24 +30,23 @@ module.exports.function = function my_search (games) {
        }
       }
         
-        
-      results.push(template)
+      if(typeof(tmpResults[i].series[0]) !== "undefined")     
+       results.push(template)
       j++;
-      console.log(tmpResults[i].image_url)
       }
     }
   }
   
   //If user request Dota 2
-  else if (games == "dota 2" || games == "dota two")
+  else if (games == "dota 2" || games == "dota two") //checks if human says dota 2
   {
     for (var i = 0; i < tmpResults.length; i++) {
       if (j == 60)
         break
-      if (tmpResults[i].videogame.name == "Dota 2"){   //TESTING
+      if (tmpResults[i].videogame.name == "Dota 2"){ //checks json has "Dota 2"
       var date = tmpResults[i].series[0]
       
-   //  if(tmpResults[i].series[0].hasOwnProperty('begin_at')) { 
+    if(typeof(tmpResults[i].series[0]) !== "undefined") { //Checks if it has a series object.
       template = {
          leauge_name: tmpResults[i].name,
         image_URL: {
@@ -57,14 +54,43 @@ module.exports.function = function my_search (games) {
         },
           start_date: date.begin_at
       }
-  //   }
+     }
         
-      results.push(template)
+      if(typeof(tmpResults[i].series[0]) !== "undefined")
+        results.push(template)
       j++;
-      console.log(tmpResults[i].image_url)
       }
     }
   }
+  
+ 
+  //If user request counter strike
+  else if (games == "counter strike" || games == "Counter Strike") //checks if human says dota 2
+  {
+    for (var i = 0; i < tmpResults.length; i++) {
+      if (j == 60)
+        break
+      if (tmpResults[i].videogame.name == "CS:GO"){ //checks json has "Dota 2"
+      var date = tmpResults[i].series[0]
+      
+    if(typeof(tmpResults[i].series[0]) !== "undefined") { //Checks if it has a series object.
+      template = {
+         leauge_name: tmpResults[i].name,
+        image_URL: {
+          url: tmpResults[i].image_url 
+        },
+          start_date: date.begin_at
+      }
+     }
+        
+      if(typeof(tmpResults[i].series[0]) !== "undefined")
+        results.push(template)
+      j++;
+      }
+    }
+  }
+  
+  
   
   
   //if no video game is given!
@@ -74,14 +100,16 @@ module.exports.function = function my_search (games) {
         break 
       var date = tmpResults[i].series[0]
       
-      template = {
-         leauge_name: tmpResults[i].name,
-        image_URL: {
-          url: tmpResults[i].image_url 
+       if(typeof(tmpResults[i].series[0]) !== "undefined"){
+          template = {
+           leauge_name: tmpResults[i].name,
+           image_URL: {
+           url: tmpResults[i].image_url 
         },
-     // start_date: date.begin_at
+      start_date: date.begin_at
      } 
-      
+    }
+          
       if(typeof(tmpResults[i].series[0]) !== "undefined")
         results.push(template)
       j++;
