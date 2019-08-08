@@ -13,20 +13,70 @@ module.exports.function = function my_search (games) {
   if (games == "overwatch")
     console.log("found overwatch")
   
-  for (var i = 0; i < tmpResults.length; i++) {
-    if (j == 20)
-      break
-    var date = tmpResults[i].series[0]
-    template = {
-       leauge_name: tmpResults[i].name,
-      image_URL: {
-        url: tmpResults[i].image_url 
-      },
-      start_date: date.begin_at
+  //If user request Overwatch Leagues!
+  if (games == "Overwatch" || games == "overwatch")
+  {
+    for (var i = 0; i < tmpResults.length; i++) {
+      if (j == 8)
+        break
+      if (tmpResults[i].videogame.name == "Overwatch"){   
+      var date = tmpResults[i].series[0]
+      template = {
+         leauge_name: tmpResults[i].name,
+        image_URL: {
+          url: tmpResults[i].image_url 
+        },
+        start_date: date.begin_at
+      }
+      results.push(template)
+      j++;
+      console.log(tmpResults[i].image_url)
+      }
     }
-    results.push(template)
-    j++;
-    console.log(tmpResults[i].image_url)
   }
+  
+  //If user request Dota 2
+  else if (games == "dota 2" || games == "dota two")
+  {
+    for (var i = 0; i < tmpResults.length; i++) {
+      if (j == 20)
+        break
+      if (tmpResults[i].videogame.name == "Dota 2"){   //TESTING
+      var date = tmpResults[i].series[0]
+      template = {
+         leauge_name: tmpResults[i].name,
+        image_URL: {
+          url: tmpResults[i].image_url 
+        },
+          start_date: date.begin_at
+      }
+      results.push(template)
+      j++;
+      console.log(tmpResults[i].image_url)
+      }
+    }
+  }
+  
+  
+  //if no video game is given!
+  else {
+        for (var i = 0; i < tmpResults.length; i++) {
+      if (j == 20)
+        break 
+      var date = tmpResults[i].series[0]
+      template = {
+         leauge_name: tmpResults[i].name,
+        image_URL: {
+          url: tmpResults[i].image_url 
+        },
+        start_date: date.begin_at
+      }
+      results.push(template)
+      j++;
+      console.log(tmpResults[i].image_url)    
+    }
+  }
+  
+  
   return results;
 }
