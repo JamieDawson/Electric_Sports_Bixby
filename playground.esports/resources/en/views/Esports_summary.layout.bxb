@@ -4,24 +4,14 @@ layout {
 
   content {
     section {
-      content {    
-       ////////Find start date! 
-       // paragraph {
-       //    value ("#{value(this.image_URL.url)}")
-       //    style (Title_L)
-       //  }
-        
-       ////////Find name of leauge! 
-        // paragraph {
-        //    value ("#{value(this.leauge_name)}")
-        //    style (Title_L)
-        //  }
-                   
+      content {
         ////////find image NOT WORKING
           image {
+          object-fit (Contain)
+          background-color (White)
            url("#{value(this.image_URL.url)}")
-          }              
-      } 
+          } 
+      }
     }
   }
 }

@@ -14,7 +14,7 @@ module.exports.function = function my_search (games) {
     console.log("found overwatch")
   
   for (var i = 0; i < tmpResults.length; i++) {
-    if (j == 5)
+    if (j == 20)
       break
     var date = tmpResults[i].series[0]
     template = {
