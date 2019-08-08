@@ -4,11 +4,10 @@ layout {
 
   content {
     section {
-      content {
-      
+      content {    
        ////////Find start date! 
        // paragraph {
-       //    value ("#{value(this.start_date)}")
+       //    value ("#{value(this.image_URL.url)}")
        //    style (Title_L)
        //  }
         
@@ -17,12 +16,11 @@ layout {
         //    value ("#{value(this.leauge_name)}")
         //    style (Title_L)
         //  }
-          
-          
+                   
         ////////find image NOT WORKING
-      //  image {
-      //    url("#value(this.image_URL)")
-      //  }         
+          image {
+           url("#{value(this.image_URL.url)}")
+          }              
       } 
     }
   }
