@@ -8,18 +8,18 @@ structure (Leauge_search) {
     visibility (Private)
   }
   
-  //Image for Compitition
+//   //Image for Compitition
   property (image_URL) {
     type (image.Image)
     min (Optional) max (One)
     visibility (Private)
   }
-  
-  //Start date for Compitiion 
-  property (start_date) {
-    type (core.Text)
-    min (Optional) max (One)
-    visibility (Private)
-  }
+//   
+//   //Start date for Compitiion 
+//   property (start_date) {
+//     type (core.Text)
+//     min (Optional) max (One)
+//     visibility (Private)
+//   }
 }
 
