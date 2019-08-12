@@ -18,12 +18,17 @@ if (games == "league of legends" || games == "League of Legends") //checks if hu
       
   
         template = {
-          leauge_name: tmpResults[i].name,
+          leauge_name: tmpResults[i].league.slug,
           image_URL: {
           url: tmpResults[i].league.image_url 
           },
-           start_date: date.begin_at
-        }
+           start_date: date.begin_at,
+          
+          team_image_URL: {
+          url: tmpResults[i].teams[0].image_url
+         }      
+       }
+        console.log(tmpResults[i].teams[0].image_url)
      }  
         results.push(template)
       } 

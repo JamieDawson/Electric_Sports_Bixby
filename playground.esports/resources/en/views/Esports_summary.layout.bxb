@@ -6,17 +6,17 @@
     section {
       content {
        
-        single-line {
-          text {
-            value("#{value(this.start_date)}")
-          }
-        }
+        // single-line {
+        //   text {
+        //     value("#{value(this.start_date)}")
+        //   }
+        // }
         
         //Test image_URL
-          // image {
-          // object-fit (Contain)
-          //  url("#{value(this.image_URL.url)}")
-          // } 
+          image {
+          object-fit (Contain)
+           url("#{value(this.image_URL.url)}")
+          } 
        
         //Test leauge_name
         // single-line {

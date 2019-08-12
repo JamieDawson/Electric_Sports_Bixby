@@ -14,7 +14,16 @@ structure (Leauge_search) {
     min (Optional) max (One)
     visibility (Private)
   }
-//   
+  
+  //Image for teams
+  property (team_image_URL) {
+    type (image.Image)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+  
+  
+  
 //   //Start date for Compitiion 
   property (start_date) {
     type (core.Text)
