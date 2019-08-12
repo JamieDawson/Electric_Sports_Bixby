@@ -26,12 +26,13 @@ layout {
           }
         
         //Image for teams
+
         image {
           object-fit (Contain)
-           url("#{value(this.team_image_URL.url)}")
+           url("#{value(this.team_image_URL.url[0])}")
           }  
-                     
-      } 
+        }
+        
     }
   }
 }
