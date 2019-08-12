@@ -16,10 +16,10 @@ structure (Leauge_search) {
   }
 //   
 //   //Start date for Compitiion 
-//   property (start_date) {
-//     type (core.Text)
-//     min (Optional) max (One)
-//     visibility (Private)
-//   }
+  property (start_date) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
 }
 

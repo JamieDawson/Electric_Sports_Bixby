@@ -5,11 +5,20 @@
   content {
     section {
       content {
-        ////////find image NOT WORKING
-          image {
-          object-fit (Contain)
-           url("#{value(this.image_URL.url)}")
-          } 
+       
+        single-line {
+          text {
+            value("#{value(this.start_date)}")
+          }
+        }
+        
+        //Test image_URL
+          // image {
+          // object-fit (Contain)
+          //  url("#{value(this.image_URL.url)}")
+          // } 
+       
+        //Test leauge_name
         // single-line {
         //   text {
         //     value ("#{value(this.leauge_name)}")

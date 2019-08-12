@@ -13,7 +13,7 @@ if (games == "league of legends" || games == "League of Legends") //checks if hu
   {
     for (var i = 0; i < tmpResults.length; i++) {  
       if (tmpResults[i].videogame.name == "LoL"){ //checks json has "Dota 2"
-       // var date = tmpResults[i].series[0]
+        var date = tmpResults[i]
       
       
   
@@ -22,7 +22,7 @@ if (games == "league of legends" || games == "League of Legends") //checks if hu
           image_URL: {
           url: tmpResults[i].league.image_url 
           },
-       //    start_date: date.begin_at
+           start_date: date.begin_at
         }
      }  
         results.push(template)
