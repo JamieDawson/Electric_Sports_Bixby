@@ -35,5 +35,14 @@ structure (Leauge_search) {
     min (Optional) max (One)
     visibility (Private)
   }
+  
+  //just a text to use for my Dialog.
+   property (name_of_the_game) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+  
+  
 }
 
