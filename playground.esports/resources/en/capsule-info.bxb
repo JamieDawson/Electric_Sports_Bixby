@@ -1,0 +1,20 @@
+capsule-info {
+  display-name (Electric Competitions)
+  description ("Are you a fan of eSports and want to know about upcoming or previous tournaments? The check out NAMEHERE to learn about tournaments for League of Legends, Counter Strike, and Dota 2!")
+//  privacy-policy-url (http://my-capsule.com/en/privacy-policy)
+ // terms-url (http://my-capsule.com/en/TandC)
+  search-keywords {
+    keyword (eSports)
+    keyword (video games)
+    keyword (competition)
+  }
+  dispatch-name (Electric Competitions)
+  dispatch-aliases {
+    alias (gratuity calculator)
+  }
+  action-bg-color (#FFC50A)
+  action-fg-color (#443D32)
+  //android-app-id (myActionId)
+  developer-name (Jamie Dawson)
+  icon-asset (/images/icons/game_icon.png)
+}
