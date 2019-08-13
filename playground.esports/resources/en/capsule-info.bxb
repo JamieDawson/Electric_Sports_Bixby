@@ -1,6 +1,6 @@
 capsule-info {
   display-name (Electric Competitions)
-  description ("Are you a fan of eSports and want to know about upcoming or previous tournaments? The check out NAMEHERE to learn about tournaments for League of Legends, Counter Strike, and Dota 2!")
+  description ("Are you a fan of eSports and want to know about upcoming or previous tournaments? Then check out Electric Competitions to learn about tournaments for League of Legends, Counter Strike, and Dota 2!")
 //  privacy-policy-url (http://my-capsule.com/en/privacy-policy)
  // terms-url (http://my-capsule.com/en/TandC)
   search-keywords {
@@ -10,7 +10,7 @@ capsule-info {
   }
   dispatch-name (Electric Competitions)
   dispatch-aliases {
-    alias (gratuity calculator)
+    alias (Electric Competition)
   }
   action-bg-color (#FFC50A)
   action-fg-color (#443D32)

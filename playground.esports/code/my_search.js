@@ -9,6 +9,19 @@ module.exports.function = function my_search (games) {
   var tmpResults = http.getUrl(apiURL, {format: 'text'});
   tmpResults = JSON.parse(tmpResults) 
   var teamNum = 0;
+  var random_num = Math.floor(Math.random() * 3);
+  
+  console.log("helloooo")
+  if (games != "dota" && games != "league of legends" && games != "counter strike") {
+    console.log("hello")
+    if (random_num == 0)
+      games = "league of legends";
+    if (random_num == 1)
+      games = "dota";
+    if (random_num == 2)
+      games = "counter strike"
+  }
+  
   
   if (games == "league of legends" || games == "League of Legends") { 
     for (var i = 0; i < tmpResults.length; i++) {  

@@ -24,15 +24,25 @@ layout {
             style (Title_XS)
           }
         
-        paragraph {
+       paragraph {
           value ("Teams in the competition:")
           style(Title_XS)
         }
         
+        if (!this.team_image_URL[0])
+        {
+          paragraph {
+            value("Teams have not been announced yet!")
+            style(Title_L)
+          }
+        }
+       
+           
         //Image for teams
         for-each (this.team_image_URL) {
           as (x) {
             image {
+              lightbox-enabled (false)
               object-fit (Contain)
               url("#{value(x.url)}")
             }
