@@ -1,0 +1,4 @@
+dialog (Result) {
+  match: Leauge_search
+  template("Here are your League of Legends results")
+}

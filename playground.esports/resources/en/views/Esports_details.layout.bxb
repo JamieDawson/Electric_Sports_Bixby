@@ -4,26 +4,30 @@ layout {
 
   content {
     section {
-      content {          
-
+      content {     
         //Image for Compitition
           image {
           object-fit (Contain)
-          background-color (White)
+          lightbox-enabled (false)
            url("#{value(this.image_URL.url)}")
           }   
          
 //         ////////Find name of leauge! 
          paragraph {
-            value ("#{value(this.leauge_name)}")
-            style (Title_L)
+            value ("Event name: #{value(this.leauge_name)}")
+            style (Title_XS)
           } 
         
 //        ////////Find start date! 
          paragraph {
-            value ("#{value(this.start_date)}")
-            style (Title_L)
+            value ("Start date: #{value(this.start_date)}")
+            style (Title_XS)
           }
+        
+        paragraph {
+          value ("Teams in the competition:")
+          style(Title_XS)
+        }
         
         //Image for teams
         for-each (this.team_image_URL) {
@@ -38,6 +42,12 @@ layout {
               }
             }
           }
+        }
+        attribution-link { //youtube linke for compitition
+          label {
+            template ("Click here to see Youtube footage of the event!")
+          }
+          url ("#{value(this.youtube_link)}")
         }
       }
     }

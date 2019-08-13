@@ -20,13 +20,18 @@ module.exports.function = function my_search (games) {
             caption: tmpResults[i].teams[j].name
           });
         
+        var youtube_search = "https://www.youtube.com/results?search_query=" + tmpResults[i].league.slug;
+        
+        console.log(youtube_search)
+        
         template = {
           leauge_name: tmpResults[i].league.slug,
           image_URL: {
             url: tmpResults[i].league.image_url 
           },
           start_date: date.begin_at,
-          team_image_URL: teamImages
+          team_image_URL: teamImages,
+          youtube_link: youtube_search,
         }
         console.log(tmpResults[i].teams[0].image_url)
       }  
