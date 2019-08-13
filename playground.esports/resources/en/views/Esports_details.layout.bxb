@@ -26,13 +26,20 @@ layout {
           }
         
         //Image for teams
-
-        image {
-          object-fit (Contain)
-           url("#{value(this.team_image_URL.url[0])}")
-          }  
+        for-each (this.team_image_URL) {
+          as (x) {
+            image {
+              object-fit (Contain)
+              url("#{value(x.url)}")
+            }
+            single-line {
+              text {
+                value ("#{value(x.caption)}")
+              }
+            }
+          }
         }
-        
+      }
     }
   }
 }

@@ -18,7 +18,7 @@ structure (Leauge_search) {
   //Image for teams
   property (team_image_URL) {
     type (image.Image)
-    min (Optional) max (One)
+    min (Optional) max (Many)
     visibility (Private)
   }
   
