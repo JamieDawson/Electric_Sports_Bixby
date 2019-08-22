@@ -15,8 +15,8 @@ layout {
             } 
 
             paragraph {
-              value("#{value(this.start_date)}")
-              style(Detail_M)
+              value("Start date: #{value(this.start_date)}")
+              style(Detail_L)
             }
 
           }

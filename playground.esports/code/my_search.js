@@ -12,7 +12,7 @@ module.exports.function = function my_search (games) {
   var random_num = Math.floor(Math.random() * 3);
   
   console.log("helloooo")
-  if (games != "dota" && games != "league of legends" && games != "counter strike") {
+  if (games != "dota" && games != "league of legends" && games != "counter strike" && games != "league") {
     console.log("hello")
     if (random_num == 0)
       games = "league of legends";
@@ -22,8 +22,7 @@ module.exports.function = function my_search (games) {
       games = "counter strike"
   }
   
-  
-  if (games == "league of legends" || games == "League of Legends") { 
+  if (games == "league of legends" || games == "League of Legends" || games == "league") { 
     for (var i = 0; i < tmpResults.length; i++) {  
       if (tmpResults[i].videogame.name == "LoL") { //checks json has "Dota 2"
         var date = tmpResults[i]
@@ -35,7 +34,7 @@ module.exports.function = function my_search (games) {
           });
         
         var youtube_search = "https://www.youtube.com/results?search_query=" + tmpResults[i].league.slug;
-        var the_name = "League of Legends!";    
+        var the_name = "League of Legends";    
            
         template = {
           leauge_name: tmpResults[i].league.slug,
@@ -51,7 +50,6 @@ module.exports.function = function my_search (games) {
       results.push(template)
     } 
   }
-  
   
   else if (games == "dota 2" || games == "dota") { 
     for (var i = 0; i < tmpResults.length; i++) {  
@@ -83,7 +81,6 @@ module.exports.function = function my_search (games) {
     } 
   }
   
-  
   else if (games == "counter strike" || games == "Counter Strike") { 
     for (var i = 0; i < tmpResults.length; i++) {  
       if (tmpResults[i].videogame.name == "CS:GO") { //checks json has "Dota 2"
@@ -113,8 +110,5 @@ module.exports.function = function my_search (games) {
       results.push(template)
     } 
   }
-  
-  
-
     return results;
 }

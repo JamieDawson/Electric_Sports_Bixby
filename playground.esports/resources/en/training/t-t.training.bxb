@@ -3,3 +3,8 @@ train (t-tbotsvmzbww2gjqckd9a3v4gz) {
   plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
   last-modified (1566515012348)
 }
+train (t-tkrl7bh7u6gzdgukn5b5l7a8s) {
+  utterance ("[g:My_search] Show me (league)[v:My_text_concept] compititions")
+  plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
+  last-modified (1566518112206)
+}

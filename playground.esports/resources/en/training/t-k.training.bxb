@@ -8,6 +8,11 @@ train (t-kjgy8cctovkxi6bw70abxxifz) {
   plan (Y2BiUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EibLCIQMUAwkAQ==)
   last-modified (1566515012039)
 }
+train (t-kwbmbh8kywqzxjk55ekqnzhhi) {
+  utterance ("[g:My_search] I want something with (league)[v:My_text_concept]")
+  plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
+  last-modified (1566518152678)
+}
 train (t-kyo7ly9vk5qib4r3q50yb6pb4) {
   utterance ([g:My_search] tell me what events are happening!)
   plan (Y2BiUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EibLCIQMUAwkAQ==)
