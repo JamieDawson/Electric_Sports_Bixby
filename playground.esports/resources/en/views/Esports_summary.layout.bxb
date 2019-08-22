@@ -1,30 +1,25 @@
-       layout {
+  layout {
   match: Leauge_search (this)
   mode (Summary)
 
   content {
     section {
       content {
-       
-        // single-line {
-        //   text {
-        //     value("#{value(this.start_date)}")
-        //   }
-        // }
-        
-        //Test image_URL
-          image {
-          object-fit (Contain)
-           url("#{value(this.image_URL.url)}")
-          } 
-       
-        //Test leauge_name
-        // single-line {
-        //   text {
-        //     value ("#{value(this.leauge_name)}")
-        //   }
-        // }
-        
+        for-each (this.image_URL.url)
+        {
+          as (x) {
+           image {
+            object-fit (Contain)
+             url("#{value(this.image_URL.url)}")
+            } 
+
+            paragraph {
+              value("#{value(this.start_date)}")
+              style(Detail_M)
+            }
+
+          }
+        }       
       }
     }
   }
