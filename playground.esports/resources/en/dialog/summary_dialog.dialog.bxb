@@ -1,4 +1,4 @@
 dialog (Result) {
-  match: Leauge_search
+  match: League_search
    template("Here are the results for #{value(name_of_the_game)} tournaments!")
 }

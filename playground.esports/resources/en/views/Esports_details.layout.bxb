@@ -1,5 +1,5 @@
 layout {
-  match: Leauge_search (this)
+  match: League_search (this)
   mode (Details)
 
   content {

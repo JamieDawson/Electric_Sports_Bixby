@@ -7,7 +7,7 @@ action (My_search) {
       min (Optional) max (One)
     }
   }
-  output (Leauge_search)
+  output (League_search)
 }
 
 
