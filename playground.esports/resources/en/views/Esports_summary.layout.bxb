@@ -1,4 +1,4 @@
-  layout {
+layout {
   match: League_search (this)
   mode (Summary)
 
@@ -10,6 +10,7 @@
           as (x) {
            image {
             object-fit (Contain)
+            background-color (White)
              url("#{value(this.image_URL.url)}")
             } 
 

@@ -47,7 +47,6 @@ module.exports.function = function my_search (games) {
           youtube_link: youtube_search,
           name_of_the_game: the_name,
         }
-        console.log(tmpResults[i].teams[0].image_url)
       }  
       results.push(template)
     } 
