@@ -7,7 +7,7 @@ layout {
       content {
         for-each (this.image_URL.url)
         {
-          as (x) {
+          as (x) {    
            image {
             object-fit (Contain)
             background-color (White)

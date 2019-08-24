@@ -4,7 +4,7 @@ layout {
 
   content {
     section {
-      content {     
+      content {    
         //Image for Compitition
           image {
           object-fit (Contain)
@@ -36,8 +36,7 @@ layout {
             style(Title_L)
           }
         }
-       
-           
+             
         //Image for teams
         for-each (this.team_image_URL) {
           as (x) {
@@ -59,6 +58,7 @@ layout {
           }
           url ("#{value(this.youtube_link)}")
         }
+        
       }
     }
   }
