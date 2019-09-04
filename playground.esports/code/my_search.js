@@ -11,7 +11,6 @@ module.exports.function = function my_search (games) {
   var teamNum = 0;
   var random_num = Math.floor(Math.random() * 3);
   
-  console.log("helloooo")
   if (games != "dota" && games != "Dota" && games != "league of legends" && 
   games != "League of Legends" && games != "counter strike" && games != "Counter Strike") {
     console.log("hello")
@@ -52,7 +51,7 @@ module.exports.function = function my_search (games) {
     } 
   }
   
-  else if (games == "dota 2" || games == "dota") { 
+  else if (games == "dota 2" || games == "dota" || games == "Dota") { 
     for (var i = 0; i < tmpResults.length; i++) {  
       if (tmpResults[i].videogame.name == "Dota 2") { //checks json has "Dota 2"
         console.log("DO I GET HERE!!!")
