@@ -1,10 +1,4 @@
-train (t-3v9yi8i2v9dz4kckxt3nty0ii) {
-  utterance ("[g:My_search]  (dota)[v:My_text_concept] tournaments")
-  plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
-  last-modified (1566515011701)
-}
 train (t-3voc1biyjl8kdm85c4q57hvlm) {
   utterance ("[g:My_search] show me all the (dota)[v:My_text_concept] events")
-  plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
-  last-modified (1566515011787)
+  last-modified (1567626716207)
 }

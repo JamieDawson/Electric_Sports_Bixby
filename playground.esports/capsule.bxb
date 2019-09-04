@@ -1,5 +1,5 @@
 capsule {
-  id (jamie_dawson.electric_competition)
+  id (playground.electric_competition)
   version (0.1.1)
   format (3)
   targets {
