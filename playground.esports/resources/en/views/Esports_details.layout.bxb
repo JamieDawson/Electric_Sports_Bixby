@@ -12,13 +12,13 @@ layout {
            url("#{value(this.image_URL.url)}")
           }   
          
-//         ////////Find name of leauge! 
+//////////Find name of leauge! 
          paragraph {
             value ("Event name: #{value(this.leauge_name)}")
             style (Title_XS)
           } 
         
-//        ////////Find start date! 
+//////////Find start date! 
          paragraph {
             value ("Start date: #{value(this.start_date)}")
             style (Title_XS)
@@ -41,6 +41,7 @@ layout {
         for-each (this.team_image_URL) {
           as (x) {
             image {
+              background-color (White)
               lightbox-enabled (false)
               object-fit (Contain)
               url("#{value(x.url)}")
