@@ -1,0 +1,28 @@
+// layout {
+//   match: League_search (this)
+//   mode (Summary)
+
+//   content {
+//     section {
+//       content {
+//         for-each (this.image_URL.url)
+//         {
+//           as (x) {    
+
+//            image {
+//             object-fit (Contain)
+//             background-color (White)
+//              url("#{value(this.image_URL.url)}")
+//             } 
+
+//             paragraph {
+//               value("Start date: #{value(this.start_date)}")
+//               style(Detail_L)
+//             }
+
+//           }
+//         }       
+//       }
+//     }
+//   }
+// }

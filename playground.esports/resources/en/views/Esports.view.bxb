@@ -1,0 +1,23 @@
+result-view{
+	match: League_search (esports)
+	
+	render {
+		if (size(esports) > 1) {
+			list-of (esports) {
+				where-each (item_name) {  //iterate through list of esports.
+					layout-macro (esports-summary){
+						param (x) {
+							expression (item_name) 
+						}
+					}
+				}
+			}
+		} else-if (size(esports) == 1) {
+      layout-macro (esports-details){
+        param (item_name){
+          expression (item_name) //just passing one pet*S* into macro.
+        }
+      }
+    }
+	}
+}

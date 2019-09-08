@@ -1,0 +1,14 @@
+layout-macro-def (esports-summary) { //name of layout macro.
+  params{
+    param (x){ //declaring this param to be known as with this specific component
+      type (League_search) // matching concept Pet.
+      min (Required)
+      max (Many)
+    }
+  }
+  content{
+    paragraph{
+      value(Hi i'm in the pet summary macro)
+    }
+  }
+}

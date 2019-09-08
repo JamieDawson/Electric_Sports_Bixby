@@ -1,0 +1,18 @@
+layout-macro-def (esports-details){ //name of macro
+	params{
+		param (x) {
+			type (League_search) //model from concept
+			min (Required)
+			max (One)
+		}
+	}
+	content{
+		section{
+			content{
+        paragraph{
+          value(i'm in the details page)
+        }
+			}
+		}
+	}
+}

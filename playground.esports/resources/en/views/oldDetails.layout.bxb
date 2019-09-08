@@ -1,0 +1,66 @@
+// layout {
+//   match: League_search (this)
+//   mode (Details)
+
+//   content {
+//     section {
+//       content {    
+//         //Image for Compitition
+//           image {
+//           object-fit (Contain)
+//           lightbox-enabled (false)
+//            url("#{value(this.image_URL.url)}")
+//           }   
+         
+// //////////Find name of leauge! 
+//          paragraph {
+//             value ("Event name: #{value(this.leauge_name)}")
+//             style (Title_XS)
+//           } 
+        
+// //////////Find start date! 
+//          paragraph {
+//             value ("Start date: #{value(this.start_date)}")
+//             style (Title_XS)
+//           }
+        
+//        paragraph {
+//           value ("Teams in the competition:")
+//           style(Title_XS)
+//         }
+        
+//         if (!this.team_image_URL[0])
+//         {
+//           paragraph {
+//             value("Teams have not been announced yet!")
+//             style(Title_L)
+//           }
+//         }
+             
+//         //Image for teams
+//         for-each (this.team_image_URL) {
+//           as (x) {
+//             image {
+//               background-color (White)
+//               lightbox-enabled (false)
+//               object-fit (Contain)
+//               url("#{value(x.url)}")
+//             }
+//             single-line {
+//               text {
+//                 value ("#{value(x.caption)}")
+//               }
+//             }
+//           }
+//         }
+//         attribution-link { //youtube linke for compitition
+//           label {
+//             template ("Click here to see Youtube footage of the event!")
+//           }
+//           url ("#{value(this.youtube_link)}")
+//         }
+        
+//       }
+//     }
+//   }
+// }
