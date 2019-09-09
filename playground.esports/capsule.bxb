@@ -1,6 +1,6 @@
 capsule {
   id (jamie_dawson.electric_competition)
-  version (0.1.2)
+  version (0.1.8)
   format (3)
   targets {
     target (bixby-mobile-en-US)

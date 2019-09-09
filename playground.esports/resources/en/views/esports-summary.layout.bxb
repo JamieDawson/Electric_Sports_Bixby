@@ -7,16 +7,18 @@ layout-macro-def (esports-summary) { //name of layout macro.
 		}
 	}
 	content{
-		cell-card {
-			slot1 {
-				image {
-					url("#{value(x.image_URL.url)}")
-          
-          shape (Square)
+		image-card{
+			aspect-ratio(3:4)
+			column-size (2)
+			image-url ("#{value(x.image_URL.url)}")
+			image-object-fit (Contain)
+			title-area {
+				slot1{
+					text {
+						value("Start date: #{value(x.start_date)}")
+						style(Legal)
+					}
 				}
-			}
-			slot2 {
-				
 			}
 		}
 		
