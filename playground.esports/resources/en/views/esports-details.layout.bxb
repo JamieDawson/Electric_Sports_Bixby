@@ -5,18 +5,31 @@ layout-macro-def (esports-details){ //name of macro
 			min (Required)
 			max (One)
 		}
+		
 	}
+	
+	
 	content{
-		section{
+		section{ 
 			content{
 				
 				image {
 					url("#{value(x.image_URL.url)}")
+					lightbox-enabled (false)
 					object-fit (Contain)
 				}
 				
 				paragraph {
-					value(is this working)
+					value ("Teams competing:")
+					style(Title_L)
+				}
+				
+				if (!x.team_image_URL[0])
+				{
+					paragraph {
+						value("Teams have not been announced yet!")
+						style(Title_L)
+					}
 				}
 				
 				
@@ -36,35 +49,42 @@ layout-macro-def (esports-details){ //name of macro
 					}
 				}
 				
-			
-
-				cell-card {
-					on-click {
-						intent {
-							goal: League_search
-							value: $expr(x.name_of_the_game) //pass in
-						}
+				
+				
+				// cell-card {
+				// 	on-click {
+				// 		intent {
+				// 			goal: League_search
+				// 			value: $expr(x.name_of_the_game) //pass in
+				// 		}
+				// 	}
+				
+				// 	slot1{
+				// 		image {
+				// 			url(images/icons/game_icon.png)
+				// 			shape (Circle)
+				// 			background-color (Transparent)
+				// 		}
+				// 	}
+				// 	slot2 {
+				// 		content {
+				// 			primary{
+				// 				template ("See other #{value(x.name_of_the_game)} tournaments!")
+				// 			}
+				
+				
+				// 		}
+				// 	}
+				// }
+				
+				
+				attribution-link { //youtube linke for compitition
+					label {
+						template ("Click here to see Youtube footage of the event!")
 					}
-					
-					slot1{
-						image {
-							url(images/icons/game_icon.png)
-							shape (Circle)
-							background-color (Transparent)
-						}
-					}
-					slot2 {
-						content {
-							primary{
-								template ("See other #{value(x.name_of_the_game)} tournaments!")
-							}
-							
-							
-						}
-					}
+					url ("#{value(x.youtube_link)}")
 				}
-
-
+				
 			}
 		}
 	}

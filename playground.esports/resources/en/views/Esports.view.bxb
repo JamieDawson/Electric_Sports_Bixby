@@ -1,23 +1,30 @@
 result-view{
 	match: League_search (esports)
-	
+
 	render {
 		if (size(esports) > 1) {
-			list-of (esports) {
-				where-each (item_name) {  //iterate through list of esports.
-					layout-macro (esports-summary){
-						param (x) {
+			list-of (esports) { 
+				where-each (item_name) {   //iterate through list of esports.
+					layout-macro (esports-summary){ 
+						param (x) { 
 							expression (item_name) 
 						}
 					}
 				}
 			}
-		} else-if (size(esports) == 1) {
+		} else-if (size(esports) == 1) { 
       layout-macro (esports-details){
         param (x){
           expression (esports) //just passing one pet*S* into macro.
         }
       }
     }
+	} 
+	conversation-drivers{
+		if (size(esports) == 1){
+			conversation-driver{
+				template(back) //add "back" button when a tournament is selected.
+			}
+		}
 	}
 }
