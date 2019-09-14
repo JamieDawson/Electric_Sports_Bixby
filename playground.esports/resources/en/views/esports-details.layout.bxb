@@ -18,12 +18,31 @@ layout-macro-def (esports-details){ //name of macro
 				paragraph {
 					value(is this working)
 				}
+				
+				
+				for-each (x.team_image_URL) {
+					as (x) {
+						image {
+							background-color (White)
+							lightbox-enabled (false)
+							object-fit (Contain)
+							url("#{value(x.url)}")
+						}
+						single-line {
+							text {
+								value ("#{value(x.caption)}")
+							}
+						}
+					}
+				}
+				
+			
 
 				cell-card {
 					on-click {
 						intent {
 							goal: League_search
-							value: $expr(x.leauge_name) //pass in value of current pet speccies
+							value: $expr(x.name_of_the_game) //pass in
 						}
 					}
 					
@@ -37,15 +56,15 @@ layout-macro-def (esports-details){ //name of macro
 					slot2 {
 						content {
 							primary{
-								template ("#{value(x.leauge_name)} here!!!!")
+								template ("See other #{value(x.name_of_the_game)} tournaments!")
 							}
-					
+							
 							
 						}
 					}
 				}
-				
-				
+
+
 			}
 		}
 	}
