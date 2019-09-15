@@ -1,48 +1,55 @@
 structure (League_search) {
   description (Looks up all the leauges)
-  
+
   //Name of compitition
   property (leauge_name) { 
     type (core.Text)
     min (Optional) max (One)
     visibility (Private)
   }
-  
-//   //Image for Compitition
+
+  //   //Image for Compitition
   property (image_URL) {
     type (image.Image)
     min (Optional) max (One)
     visibility (Private)
   }
-  
+
   //Image for teams
   property (team_image_URL) {
     type (image.Image)
     min (Optional) max (Many)
     visibility (Private)
   }
-  
-//   //Start date for Compitiion 
+
+  //Start date for Compitiion 
   property (start_date) {
     type (core.Text)
     min (Optional) max (One)
     visibility (Private)
   }
   
+  //Ebd date for Compitiion 
+  property (end_date) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+
   //Link for youtube search.
-    property (youtube_link) {
+  property (youtube_link) {
     type (core.Text)
     min (Optional) max (One)
     visibility (Private)
   }
-  
+
   //just a text to use for my Dialog.
-   property (name_of_the_game) {
+  property (name_of_the_game) {
     type (core.Text)
     min (Optional) max (One)
     visibility (Private)
   }
-  
-  
+
+
 }
 
