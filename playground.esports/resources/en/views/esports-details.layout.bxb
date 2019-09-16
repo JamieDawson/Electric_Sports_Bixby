@@ -18,10 +18,15 @@ layout-macro-def (esports-details){ //name of macro
 					lightbox-enabled (false)
 					object-fit (Contain)
 				}
+
+					paragraph {
+					value ("#{value(x.leauge_name)}")
+					style(Title_M)
+				}
 				
 				paragraph {
 					value ("Teams competing:")
-					style(Title_L)
+					style(Title_M)
 				}
 				
 				if (!x.team_image_URL[0])
