@@ -36,10 +36,10 @@ module.exports.function = function my_search (games) {
         var youtube_search = "https://www.youtube.com/results?search_query=" + tmpResults[i].league.slug;
         var the_name = "League of Legends";  
 
-        console.log('start '+tmpResults[i].begin_at)
-        console.log('end '+tmpResults[i].end_at)
+        
+
         template = {
-          leauge_name: tmpResults[i].league.slug,
+          leauge_name: tmpResults[i].league.slug.replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " "),
           image_URL: {
             url: tmpResults[i].league.image_url 
           },

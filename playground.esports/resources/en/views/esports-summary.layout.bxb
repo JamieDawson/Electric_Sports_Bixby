@@ -7,26 +7,39 @@ layout-macro-def (esports-summary) { //name of layout macro.
 		}
 	}
 	content{
-    thumbnail-card {
-      image-url ("#{value(x.image_URL.url)}")
-      image-position (Start)
-      title-area {
-        slot1 {
-          single-line {
-            text {
-              value ("Start date: #{value(x.start_date)}")
-            }
-          }
-        }
-        slot2 {
-          single-line {
-            text {
-              value ("End date: #{value(x.end_date)}")
-            }
-          }
-        }
-      }
-    }
+		thumbnail-card {
+			image-url ("#{value(x.image_URL.url)}")
+			image-position (Start)
+			title-area {
+				slot1 {
+						text {
+							value ("#{value(x.leauge_name)}")
+						}
+				}
+				slot2 {
+					single-line {
+						text {
+							value ("Start date: #{value(x.start_date)}")
+						}
+					}
+				}
+				slot3 {
+					single-line {
+						text {
+							value ("End date: #{value(x.end_date)}")
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
 		// image-card{
 		// 	aspect-ratio(3:4)
 		// 	column-size (2)
@@ -42,5 +55,3 @@ layout-macro-def (esports-summary) { //name of layout macro.
 		// 	}
 		// }
 		
-	}
-}
