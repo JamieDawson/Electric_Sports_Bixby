@@ -7,19 +7,16 @@ layout-macro-def (esports-details){ //name of macro
 		}
 		
 	}
-	
-	
 	content{
-		section{ 
+		section{
 			content{
-				
 				image {
 					url("#{value(x.image_URL.url)}")
 					lightbox-enabled (false)
 					object-fit (Contain)
 				}
-
-					paragraph {
+				
+				paragraph {
 					value ("#{value(x.leauge_name)}")
 					style(Title_M)
 				}
@@ -36,8 +33,6 @@ layout-macro-def (esports-details){ //name of macro
 						style(Title_L)
 					}
 				}
-				
-				
 				for-each (x.team_image_URL) {
 					as (x) {
 						image {
@@ -52,110 +47,14 @@ layout-macro-def (esports-details){ //name of macro
 							}
 						}
 					}
-				}
-				
-				
-				
-				// cell-card {
-				// 	on-click {
-				// 		intent {
-				// 			goal: League_search
-				// 			value: $expr(x.name_of_the_game) //pass in
-				// 		}
-				// 	}
-				
-				// 	slot1{
-				// 		image {
-				// 			url(images/icons/game_icon.png)
-				// 			shape (Circle)
-				// 			background-color (Transparent)
-				// 		}
-				// 	}
-				// 	slot2 {
-				// 		content {
-				// 			primary{
-				// 				template ("See other #{value(x.name_of_the_game)} tournaments!")
-				// 			}
-				
-				
-				// 		}
-				// 	}
-				// }
-				
-				
+				}	
 				attribution-link { //youtube linke for compitition
 					label {
 						template ("Click here to see Youtube footage of the event!")
 					}
 					url ("#{value(x.youtube_link)}")
 				}
-				
 			}
 		}
 	}
 }
-
-
-
-//content {
-//     section {
-//       content {
-//         //Image for Compitition
-//           image {
-//           object-fit (Contain)
-//           lightbox-enabled (false)
-//            url("#{value(this.image_URL.url)}")
-//           }
-
-// //////////Find name of leauge!
-//          paragraph {
-//             value ("Event name: #{value(this.leauge_name)}")
-//             style (Title_XS)
-//           }
-
-// //////////Find start date!
-//          paragraph {
-//             value ("Start date: #{value(this.start_date)}")
-//             style (Title_XS)
-//           }
-
-//        paragraph {
-//           value ("Teams in the competition:")
-//           style(Title_XS)
-//         }
-
-//         if (!this.team_image_URL[0])
-//         {
-//           paragraph {
-//             value("Teams have not been announced yet!")
-//             style(Title_L)
-//           }
-//         }
-
-//         //Image for teams
-//         for-each (this.team_image_URL) {
-//           as (x) {
-//             image {
-//               background-color (White)
-//               lightbox-enabled (false)
-//               object-fit (Contain)
-//               url("#{value(x.url)}")
-//             }
-//             single-line {
-//               text {
-//                 value ("#{value(x.caption)}")
-//               }
-//             }
-//           }
-//         }
-//         attribution-link { //youtube linke for compitition
-//           label {
-//             template ("Click here to see Youtube footage of the event!")
-//           }
-//           url ("#{value(this.youtube_link)}")
-//         }
-
-//       }
-//     }
-//   }
-// }

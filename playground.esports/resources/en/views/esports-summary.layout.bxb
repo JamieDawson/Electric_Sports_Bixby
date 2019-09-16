@@ -20,6 +20,7 @@ layout-macro-def (esports-summary) { //name of layout macro.
 					single-line {
 						text {
 							value ("Start date: #{value(x.start_date)}")
+							style(Detail_M)
 						}
 					}
 				}
@@ -27,6 +28,7 @@ layout-macro-def (esports-summary) { //name of layout macro.
 					single-line {
 						text {
 							value ("End date: #{value(x.end_date)}")
+							style(Detail_M)
 						}
 					}
 				}
