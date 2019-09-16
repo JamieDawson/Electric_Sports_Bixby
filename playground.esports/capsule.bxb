@@ -1,6 +1,6 @@
 capsule {
   id (jamie_dawson.electric_competition)
-  version (0.1.8)
+  version (1.1.0)
   format (3)
   targets {
     target (bixby-mobile-en-US)
@@ -9,6 +9,10 @@ capsule {
     concepts-inherit-super-type-features
     modern-prompt-rejection
     support-halt-effect-in-computed-inputs
+  }
+
+  store-sections{
+    section (Sports)
   }
   
     capsule-imports {
