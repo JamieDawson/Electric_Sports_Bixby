@@ -12,7 +12,8 @@ module.exports.function = function my_search(games) {
   var random_num = Math.floor(Math.random() * 3);
 
   if (games != "dota" && games != "Dota" && games != "league of legends" &&
-    games != "League of Legends" && games != "counter strike" && games != "Counter Strike") {
+    games != "League of Legends" && games != "league" && games != "counter strike" && games != "Counter Strike" && 
+    games != "counter" && games != "Counter") {
     console.log("hello")
     if (random_num == 0)
       games = "league of legends";
@@ -77,7 +78,8 @@ module.exports.function = function my_search(games) {
       }
     }
   }
-  else if (games == "counter strike" || games == "Counter Strike") {
+  else if (games == "counter strike" || games == "Counter Strike" || games == "counter" ||
+  games == "Counter") {
     for (var i = 0; i < tmpResults.length; i++) {
       var template = {}
       if (tmpResults[i].videogame.name == "CS:GO") { //checks json has "Dota 2"
