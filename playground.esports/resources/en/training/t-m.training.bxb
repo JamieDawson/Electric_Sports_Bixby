@@ -1,3 +1,8 @@
+train (t-mdxvh4biysqpv880tdh32w6il) {
+  utterance ("[g:My_search] show me any events coming up for (counter strike)[v:My_text_concept]")
+  plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
+  last-modified (1568763629537)
+}
 train (t-mw0jg9ddit2vjgay31cxi7rep) {
   utterance ("[g:My_search] What games are gonna happen with (league of legends)[v:My_text_concept]")
   plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
