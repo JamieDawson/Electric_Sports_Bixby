@@ -1,6 +1,20 @@
 var http = require('http')
 var console = require('console')
 
+var game_list = ["dota", "league of legends", "counter strike"]
+
+function findGame(game) {
+  if (!game)
+    return ;
+  game = game.toLowerCase(game)
+  for (var i = 0; i < game_list.length; i++) {
+    if (game_list[i].includes(game)) {
+      return (game_list[i])
+    }
+  }
+  return ;
+}
+
 module.exports.function = function my_search(games) {
   var stuff = "not found";
   var template;
@@ -9,19 +23,10 @@ module.exports.function = function my_search(games) {
   var tmpResults = http.getUrl(apiURL, { format: 'text' });
   tmpResults = JSON.parse(tmpResults)
   var teamNum = 0;
-  var random_num = Math.floor(Math.random() * 3);
-
-  if (games != "dota" && games != "Dota" && games != "league of legends" &&
-    games != "League of Legends" && games != "league" && games != "counter strike" && games != "Counter Strike" && 
-    games != "counter" && games != "Counter") {
-    console.log("hello")
-    if (random_num == 0)
-      games = "league of legends";
-    if (random_num == 1)
-      games = "dota";
-    if (random_num == 2)
-      games = "counter strike"
-  }
+    
+  games = findGame(games)
+  if (!games)
+    games = game_list[Math.floor(Math.random() * 3)]
 
   if (games == "league of legends" || games == "League of Legends" || games == "league") {
     for (var i = 0; i < tmpResults.length; i++) {
