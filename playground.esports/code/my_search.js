@@ -16,12 +16,12 @@ function findGame(game) {
 function buildSharedAssets(tmpResult, the_name) {
   var youtube_search = "https://www.youtube.com/results?search_query=" + tmpResult.league.slug;
   var ret = {
-    league_name: tmpResult.league.slug.replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " "),
+    league_name: tmpResult.league.slug.replace(/-/g, ' '),
     image_URL: {
       url: tmpResult.league.image_url
     },
-    start_date: tmpResult.begin_at.substring(0, 10).replace("-", "/").replace("-", "/"),
-    end_date: tmpResult.end_at ? tmpResult.end_at.substring(0, 10).replace("-", "/").replace("-", "/") : 'TBA',
+    start_date: tmpResult.begin_at.substring(0, 10).replace(/-/g, '/'),
+    end_date: tmpResult.end_at ? tmpResult.end_at.substring(0, 10).replace(/-/g, '/') : 'TBA',
     youtube_link: youtube_search,
     name_of_the_game: the_name,
   }

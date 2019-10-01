@@ -10,10 +10,12 @@ layout-macro-def (esports-details){ //name of macro
 	content{
 		section{
 			content{
-				image {
-					url("#{value(x.image_URL.url)}")
-					lightbox-enabled (false)
-					object-fit (Contain)
+				if (exists(x.image_URL.url)) {
+					image {
+						url("#{value(x.image_URL.url)}")
+						lightbox-enabled (false)
+						object-fit (Contain)
+					}
 				}
 				
 				paragraph {
@@ -47,7 +49,7 @@ layout-macro-def (esports-details){ //name of macro
 							}
 						}
 					}
-				}	
+				}
 				attribution-link { //youtube linke for compitition
 					label {
 						template ("Click here to see Youtube footage of the event!")
