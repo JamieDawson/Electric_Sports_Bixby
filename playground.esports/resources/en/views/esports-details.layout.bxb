@@ -17,7 +17,7 @@ layout-macro-def (esports-details){ //name of macro
 				}
 				
 				paragraph {
-					value ("#{value(x.leauge_name)}")
+					value ("#{value(x.league_name)}")
 					style(Title_M)
 				}
 				

@@ -13,7 +13,7 @@ layout-macro-def (esports-summary) { //name of layout macro.
 			title-area {
 				slot1 {
 						text {
-							value ("#{value(x.leauge_name)}")
+							value ("#{value(x.league_name)}")
 						}
 				}
 				slot2 {
