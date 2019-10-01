@@ -2,7 +2,7 @@ structure (League_search) {
   description (Looks up all the leauges)
 
   //Name of compitition
-  property (leauge_name) { 
+  property (league_name) { 
     type (core.Text)
     min (Optional) max (One)
     visibility (Private)

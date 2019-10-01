@@ -40,7 +40,7 @@ module.exports.function = function my_search(games) {
         var youtube_search = "https://www.youtube.com/results?search_query=" + tmpResults[i].league.slug;
         var the_name = "League of Legends";
         template = {
-          leauge_name: tmpResults[i].league.slug.replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " "),
+          league_name: tmpResults[i].league.slug.replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " "),
           image_URL: {
             url: tmpResults[i].league.image_url
           },
@@ -68,7 +68,7 @@ module.exports.function = function my_search(games) {
         var the_name = "dota";
         var youtube_search = "https://www.youtube.com/results?search_query=" + tmpResults[i].league.slug;
         template = {
-          leauge_name: tmpResults[i].league.slug.replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " "),
+          league_name: tmpResults[i].league.slug.replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " "),
           image_URL: {
             url: tmpResults[i].league.image_url
           },
@@ -98,7 +98,7 @@ module.exports.function = function my_search(games) {
         var the_name = "counter strike"
 
         template = {
-          leauge_name: tmpResults[i].league.slug.replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " "),
+          league_name: tmpResults[i].league.slug.replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " ").replace("-", " "),
           image_URL: {
             url: tmpResults[i].league.image_url
           },
