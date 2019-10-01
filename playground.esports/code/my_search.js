@@ -7,11 +7,9 @@ function findGame(game) {
   if (!game)
     return;
   game = game.toLowerCase()
-  for (var i = 0; i < game_list.length; i++) {
-    if (game_list[i].toLowerCase().includes(game)) {
+  for (var i = 0; i < game_list.length; i++)
+    if (game_list[i].toLowerCase().includes(game))
       return (game_list[i])
-    }
-  }
   return;
 }
 
@@ -30,53 +28,40 @@ function buildSharedAssets(tmpResult, the_name) {
 
   var teamImages = []; //all team images.       
   for (var j = 0; j < tmpResult.teams.length; j++) { //loop to save team images
-
     var imageTemplate = { caption: tmpResult.teams[j].name }
     if (tmpResult.teams[j].image_url)
       imageTemplate.url = tmpResult.teams[j].image_url
     else
-      imageTemplate.url = "game_icon.png" //CHANGE THIS FOR LATER!
+      imageTemplate.url = "images/icons/game_icon.png" //CHANGE THIS FOR LATER!
     teamImages.push(imageTemplate);
   }
   ret.team_image_URL = teamImages
   return ret
 }
 
-module.exports.function = function my_search(games) {
+function keyBuilder(game) {
+  if (game == "League of Legends")
+    return "LoL"
+  if (game == "Dota")
+    return "Dota 2"
+  if (game == "Counter Strike")
+    return "CS:GO"
+}
+
+module.exports.function = function my_search(game) {
   var apiURL = "https://api.pandascore.co/tournaments?token=4x5vC1weSK1XFRkBtMdt_m5LkZxit0PeQ2hvu5Go-63IRH5amj8";
   var tmpResults = http.getUrl(apiURL, { format: 'json' });
   var results = [];
 
-  games = findGame(games)
-  if (!games)
-    games = game_list[Math.floor(Math.random() * 3)]
+  game = findGame(game)
+  if (!game)
+    game = game_list[Math.floor(Math.random() * 3)]
+  for (var i = 0; i < tmpResults.length; i++) {
+    if (tmpResults[i].videogame.name == keyBuilder(game)) { //checks json has "Dota 2"
+      template = buildSharedAssets(tmpResults[i], game)
+      results.push(template)
+    }
+  }
 
-  if (games == "League of Legends") {
-    for (var i = 0; i < tmpResults.length; i++) {
-      var template = {}
-      if (tmpResults[i].videogame.name == "LoL") { //checks json has "Dota 2"
-        template = buildSharedAssets(tmpResults[i], games)
-        results.push(template)
-      }
-    }
-  }
-  else if (games == "Dota") {
-    for (var i = 0; i < tmpResults.length; i++) {
-      var template = {}
-      if (tmpResults[i].videogame.name == "Dota 2") { //checks json has "Dota 2"
-        template = buildSharedAssets(tmpResults[i], games)
-        results.push(template)
-      }
-    }
-  }
-  else if (games == "Counter Strike") {
-    for (var i = 0; i < tmpResults.length; i++) {
-      var template = {}
-      if (tmpResults[i].videogame.name == "CS:GO") { //checks json has "Dota 2"
-        template = buildSharedAssets(tmpResults[i], games)
-        results.push(template)
-      }
-    }
-  }
   return results;
 }

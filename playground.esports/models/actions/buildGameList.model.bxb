@@ -1,0 +1,4 @@
+action (buildGameList) {
+  type (Calculation)
+  output (My_text_concept)
+}

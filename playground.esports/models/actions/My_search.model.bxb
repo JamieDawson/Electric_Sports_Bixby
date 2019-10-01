@@ -2,9 +2,14 @@ action (My_search) {
   type(Search)
   description (searches through API and returns info)
   collect {
-    input (games) {
+    input (game) {
       type (My_text_concept)
-      min (Optional) max (One)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: buildGameList
+        }
+      }
     }
   }
   output (League_search)

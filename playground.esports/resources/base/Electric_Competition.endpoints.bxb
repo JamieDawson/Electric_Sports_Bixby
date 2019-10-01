@@ -2,8 +2,12 @@ endpoints {
   action-endpoints {
     //action-endpoint (My_search) {
     action-endpoint (My_search) {
-      accepted-inputs (games)
+      accepted-inputs (game)
       local-endpoint ("my_search.js")
+    }
+    action-endpoint (buildGameList) {
+      accepted-inputs ()
+      local-endpoint ("buildGameList.js")
     }
   }
 }
