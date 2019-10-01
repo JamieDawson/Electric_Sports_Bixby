@@ -20,15 +20,14 @@ module.exports.function = function my_search(games) {
   var template;
   var results = [];
   var apiURL = "https://api.pandascore.co/tournaments?token=4x5vC1weSK1XFRkBtMdt_m5LkZxit0PeQ2hvu5Go-63IRH5amj8";
-  var tmpResults = http.getUrl(apiURL, { format: 'text' });
-  tmpResults = JSON.parse(tmpResults)
+  var tmpResults = http.getUrl(apiURL, { format: 'json' });
   var teamNum = 0;
     
   games = findGame(games)
   if (!games)
     games = game_list[Math.floor(Math.random() * 3)]
 
-  if (games == "league of legends" || games == "League of Legends" || games == "league") {
+  if (games == "league of legends") {
     for (var i = 0; i < tmpResults.length; i++) {
       var template = {}
       if (tmpResults[i].videogame.name == "LoL") { //checks json has "Dota 2"
@@ -55,7 +54,7 @@ module.exports.function = function my_search(games) {
       }
     }
   }
-  else if (games == "dota 2" || games == "dota" || games == "Dota") {
+  else if (games == "dota") {
     for (var i = 0; i < tmpResults.length; i++) {
       var template = {}
       if (tmpResults[i].videogame.name == "Dota 2") { //checks json has "Dota 2"
@@ -83,8 +82,7 @@ module.exports.function = function my_search(games) {
       }
     }
   }
-  else if (games == "counter strike" || games == "Counter Strike" || games == "counter" ||
-  games == "Counter") {
+  else if (games == "counter strike") {
     for (var i = 0; i < tmpResults.length; i++) {
       var template = {}
       if (tmpResults[i].videogame.name == "CS:GO") { //checks json has "Dota 2"
