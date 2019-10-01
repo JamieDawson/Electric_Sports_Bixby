@@ -32,7 +32,7 @@ function buildSharedAssets(tmpResult, the_name) {
     if (tmpResult.teams[j].image_url)
       imageTemplate.url = tmpResult.teams[j].image_url
     else
-      imageTemplate.url = "images/icons/game_icon.png" //CHANGE THIS FOR LATER!
+      imageTemplate.url = "images/not_found_img.png" //CHANGE THIS FOR LATER!
     teamImages.push(imageTemplate);
   }
   ret.team_image_URL = teamImages
