@@ -1,0 +1,4 @@
+dialog (Progress) {
+  match: buildGameList
+  template("Looking for your eSports options!")
+}

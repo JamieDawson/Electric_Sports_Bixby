@@ -1,5 +1,5 @@
 train (t-tbotsvmzbww2gjqckd9a3v4gz) {
-  utterance ("[g:My_search] I want events for (league of legends)[v:My_text_concept]")
-  plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
-  last-modified (1566515012348)
+  utterance ("[g:My_search] I want events for (dota)[v:My_text_concept]")
+  plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
+  last-modified (1570143694889)
 }

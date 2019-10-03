@@ -1,19 +1,9 @@
 train (t-kgfuezuz9fmu0qly8xbtmkgmy) {
-  utterance ("[g:My_search] Tell me about (league of legends)[v:My_text_concept]")
-  plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
-  last-modified (1566515012004)
-}
-train (t-kjgy8cctovkxi6bw70abxxifz) {
-  utterance ([g:My_search] give me upcoming events!)
-  plan (Y2BiUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EibLCIQMUAwkAQ==)
-  last-modified (1566515012039)
+  utterance ("[g:My_search] Tell me about (dota)[v:My_text_concept]")
+  plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
+  last-modified (1570143600938)
 }
 train (t-kqpooz0nmx5c0sodf6afbsi5n) {
   utterance ("[g:My_search] (dota)[v:My_text_concept] tournaments")
   last-modified (1567626393770)
-}
-train (t-kyo7ly9vk5qib4r3q50yb6pb4) {
-  utterance ([g:My_search] tell me what events are happening!)
-  plan (jYtLCoAwEEOnehxB8R56hlLGoBX7oR1Rb283XesiCTxeqKVhN85CL+bKwfc4wJIsaw4uQqzYAieY9YTOMIk36r4P81Pl8ZcsuKUwz4hCDakSKq2I6r4=)
-  last-modified (1570143345460)
 }

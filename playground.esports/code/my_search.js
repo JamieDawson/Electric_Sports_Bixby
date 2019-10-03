@@ -2,14 +2,14 @@ var http = require('http')
 var console = require('console')
 
 function findGame(game) {
-  var game_list = ["Dota", "League of Legends", "Counter Strike"]
+  var game_list = ["Dota", "Counter Strike"]
   if (!game)
-    return game_list[Math.floor(Math.random() * 3)];
+    return game_list[Math.floor(Math.random() * 2)];
   game = game.toLowerCase()
   for (var i = 0; i < game_list.length; i++)
     if (game_list[i].toLowerCase().includes(game))
       return (game_list[i])
-  return game_list[Math.floor(Math.random() * 3)];
+  return game_list[Math.floor(Math.random() * 2)];
 }
 
 function buildSharedAssets(tmpResult, the_name) {
@@ -39,8 +39,6 @@ function buildSharedAssets(tmpResult, the_name) {
 }
 
 function keyBuilder(game) {
-  if (game == "League of Legends")
-    return "LoL"
   if (game == "Dota")
     return "Dota 2"
   if (game == "Counter Strike")
@@ -60,5 +58,6 @@ module.exports.function = function my_search(game) {
       results.push(template)
     }
   }
+  console.log(results)
   return results;
 }

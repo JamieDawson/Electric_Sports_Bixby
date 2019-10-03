@@ -1,0 +1,4 @@
+dialog (Result) {
+  match: buildGameList
+  template("Here are the games you can select!")
+}

@@ -7,7 +7,7 @@ action (My_search) {
       min (Required) max (One)
       default-init {
         intent {
-          goal: buildGameList
+          goal: buildGameList //gets called if you don't provide a game.
         }
       }
     }

@@ -1,5 +1,5 @@
 train (t-dsxr47qo0zitzg38dff0oivtj) {
-  utterance ("[g:My_search] show me {[g:My_text_concept] (league of legends)[v:My_text_concept]} competitions")
-  plan (Y2Bh0C3ISaxML8ovzUvRS81JTS4pykyOT87PLUgtySzJzM/T80lNTC9NjS9OTSxKzmDQJKTctxKmVJ8IpSWpFSVAsbzk1IIS0jUwMzAyMAFJBjDNCKR5gBgmCiQB)
-  last-modified (1567627810078)
+  utterance ("[g:My_search] show me (counter strike)[v:My_text_concept] competitions")
+  plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
+  last-modified (1570143780032)
 }

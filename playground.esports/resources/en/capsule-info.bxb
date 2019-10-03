@@ -1,6 +1,6 @@
 capsule-info {
   display-name (Electric Sports)
-  description ("Are you a fan of eSports and want to know about upcoming or previous tournaments? Then check out Electric Sports to learn about tournaments for League of Legends, Counter Strike, and Dota 2!")
+  description ("Are you a fan of eSports and want to know about upcoming or previous tournaments? Then check out Electric Sports to learn about tournaments for Counter Strike and Dota 2!")
 //  privacy-policy-url (http://my-capsule.com/en/privacy-policy)
  // terms-url (http://my-capsule.com/en/TandC)
   search-keywords {

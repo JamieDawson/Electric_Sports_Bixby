@@ -3,3 +3,13 @@ train (t-l1fa3ogiuyvquhrhe0sc5np9b) {
   plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
   last-modified (1566515012206)
 }
+train (t-lgxup8lrwbw6p8e7rw09vv197) {
+  utterance ([g:My_search] what tournaments are there)
+  plan (jYtLCoAwEEOnehxB8R56hlLGoBX7oR1Rb283XesiCTxeqKVhN85CL+bKwfc4wJIsaw4uQqzYAieY9YTOMIk36r4P81Pl8ZcsuKUwz4hCDakSKq2I6r4=)
+  last-modified (1570145523650)
+}
+train (t-lt8tgx8443n37b4m22zxc7az6) {
+  utterance ([g:My_search] tell me the games I can pick)
+  plan (jYtLCoAwEEOnehxB8R56hlLGoBX7oR1Rb283XesiCTxeqKVhN85CL+bKwfc4wJIsaw4uQqzYAieY9YTOMIk36r4P81Pl8ZcsuKUwz4hCDakSKq2I6r4=)
+  last-modified (1570145623330)
+}

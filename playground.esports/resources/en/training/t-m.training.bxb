@@ -4,7 +4,12 @@ train (t-mdxvh4biysqpv880tdh32w6il) {
   last-modified (1568763629537)
 }
 train (t-mw0jg9ddit2vjgay31cxi7rep) {
-  utterance ("[g:My_search] What games are gonna happen with (league of legends)[v:My_text_concept]")
-  plan (Y2BmUCjISaxML8ovzUvRSy0uyC8qKdbzSU1ML02NL05NLErOYJDBosK3EiarhF22JLWiJD45Py85taCEgYmBEYgZgCQjAwhA+QA=)
-  last-modified (1566515012184)
+  utterance ("[g:My_search] What games are gonna happen with (counter strike)[v:My_text_concept]")
+  plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
+  last-modified (1570143660073)
+}
+train (t-mwkwrtbpat9p4a3a0vs9mwdys) {
+  utterance ("[g:My_search] tell me what games I'm able to look at")
+  plan (jYtLCoAwEEOnehxB8R56hlLGoBX7oR1Rb283XesiCTxeqKVhN85CL+bKwfc4wJIsaw4uQqzYAieY9YTOMIk36r4P81Pl8ZcsuKUwz4hCDakSKq2I6r4=)
+  last-modified (1570145622674)
 }
