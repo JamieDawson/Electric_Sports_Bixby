@@ -54,6 +54,7 @@ module.exports.function = function my_search(game) {
 
   game = findGame(game)
   for (var i = 0; i < tmpResults.length; i++) {
+    console.log(tmpResults[i].videogame.name)
     if (tmpResults[i].videogame.name == keyBuilder(game)) { //checks json has "Dota 2"
       template = buildSharedAssets(tmpResults[i], game)
       results.push(template)
