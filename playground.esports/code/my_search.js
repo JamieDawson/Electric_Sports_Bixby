@@ -1,16 +1,15 @@
 var http = require('http')
 var console = require('console')
 
-var game_list = ["Dota", "League of Legends", "Counter Strike"]
-
 function findGame(game) {
+  var game_list = ["Dota", "League of Legends", "Counter Strike"]
   if (!game)
-    return;
+    return game_list[Math.floor(Math.random() * 3)];
   game = game.toLowerCase()
   for (var i = 0; i < game_list.length; i++)
     if (game_list[i].toLowerCase().includes(game))
       return (game_list[i])
-  return;
+  return game_list[Math.floor(Math.random() * 3)];
 }
 
 function buildSharedAssets(tmpResult, the_name) {
@@ -54,14 +53,11 @@ module.exports.function = function my_search(game) {
   var results = [];
 
   game = findGame(game)
-  if (!game)
-    game = game_list[Math.floor(Math.random() * 3)]
   for (var i = 0; i < tmpResults.length; i++) {
     if (tmpResults[i].videogame.name == keyBuilder(game)) { //checks json has "Dota 2"
       template = buildSharedAssets(tmpResults[i], game)
       results.push(template)
     }
   }
-
   return results;
 }
