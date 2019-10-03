@@ -1,0 +1,4 @@
+dialog (NoResult) {
+  match: League_search
+  template("Please request either Dota or Counter Strike.")
+}
