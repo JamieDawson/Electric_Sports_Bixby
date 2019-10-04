@@ -6,6 +6,7 @@ function findGame(game) {
   if (!game)
     return game_list[Math.floor(Math.random() * 2)];
   game = game.toLowerCase()
+  game = game.replace("-", " ") //if Counter Strike is Counter-Strike
   for (var i = 0; i < game_list.length; i++)
     if (game_list[i].toLowerCase().includes(game))
       return (game_list[i])
@@ -31,7 +32,7 @@ function buildSharedAssets(tmpResult, the_name) {
     if (tmpResult.teams[j].image_url)
       imageTemplate.url = tmpResult.teams[j].image_url
     else
-      imageTemplate.url = "images/not_found_img.png" //CHANGE THIS FOR LATER!
+      imageTemplate.url = "images/not_found.png" //CHANGE THIS FOR LATER!
     teamImages.push(imageTemplate);
   }
   ret.team_image_URL = teamImages

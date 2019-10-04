@@ -3,6 +3,11 @@ train (t-kgfuezuz9fmu0qly8xbtmkgmy) {
   plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
   last-modified (1570143600938)
 }
+train (t-kqmuwndmc19ole104tgizh1il) {
+  utterance ("[g:My_search] get me all the (counter strike)[v:My_text_concept] stuff you have")
+  plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
+  last-modified (1570152144597)
+}
 train (t-kqpooz0nmx5c0sodf6afbsi5n) {
   utterance ("[g:My_search] (dota)[v:My_text_concept] tournaments")
   last-modified (1567626393770)

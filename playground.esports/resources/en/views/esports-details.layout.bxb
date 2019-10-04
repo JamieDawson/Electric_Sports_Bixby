@@ -38,7 +38,7 @@ layout-macro-def (esports-details){ //name of macro
 				for-each (x.team_image_URL) {
 					as (x) {
 						image {
-							background-color (White)
+						//	background-color (White)
 							lightbox-enabled (false)
 							object-fit (Contain)
 							url("#{value(x.url)}")
