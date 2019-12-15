@@ -6,9 +6,16 @@ capsule {
     target (bixby-mobile-en-US)
   }
   runtime-flags {
+    use-input-views-for-selection-list-detail
+    modern-default-view-behavior
+    no-filtering-with-validation
     concepts-inherit-super-type-features
     modern-prompt-rejection
     support-halt-effect-in-computed-inputs
+  }
+
+  store-countries{
+    all
   }
 
   store-sections{
@@ -20,7 +27,7 @@ capsule {
       as (core)
     }
     import (viv.image) {
-      as (image) version (2.12.5)
+      as (image) version (2.12.10)
     }
   }
 }
