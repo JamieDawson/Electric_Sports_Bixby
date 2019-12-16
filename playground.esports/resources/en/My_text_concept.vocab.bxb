@@ -1,0 +1,4 @@
+vocab(My_text_concept) {
+  "Dota" {"Dota" "Dota 2" "go to 2"}
+  "Counter Strike" {"Counter Strike" "CS GO" "Counter Strike Go" "CounterStrike Go"}
+}

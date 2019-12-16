@@ -1,5 +1,5 @@
-train (t-pyozvjivspzgm9zoqq7wxb95f) {
-  utterance ("[g:My_search] Anything happening with (dota)[v:My_text_concept]")
-  plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
-  last-modified (1570143670129)
+train (t-pltgucke89habnliepi5vmclu) {
+  utterance ("[g:My_text_concept:prompt] (dota)[v:My_text_concept:Dota]")
+  plan (Y2BiMMxKzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvpWxpekVpQAxfKSUwtKyNHCCIQMDDxAzATEQDYA)
+  last-modified (1576452921343)
 }

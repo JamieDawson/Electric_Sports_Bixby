@@ -8,18 +8,18 @@ layout-macro-def (esports-summary) { //name of layout macro.
 	}
 	content{
 		thumbnail-card {
-			image-url ("#{value(x.image_URL.url)}")
+			image-url ("[#{value(x.image_URL.url)}]")
 			image-position (Start)
 			title-area {
 				slot1 {
 						text {
-							value ("#{value(x.league_name)}")
+							value ("[#{value(x.league_name)}]")
 						}
 				}
 				slot2 {
 					single-line {
 						text {
-							value ("Start date: #{value(x.start_date)}")
+							value ("[Start date: #{value(x.start_date)}]")
 							style(Detail_M)
 						}
 					}
@@ -27,7 +27,7 @@ layout-macro-def (esports-summary) { //name of layout macro.
 				slot3 {
 					single-line {
 						text {
-							value ("End date: #{value(x.end_date)}")
+							value ("[End date: #{value(x.end_date)}]")
 							style(Detail_M)
 						}
 					}
@@ -36,11 +36,6 @@ layout-macro-def (esports-summary) { //name of layout macro.
 		}
 	}
 }
-
-
-
-
-
 
 		// image-card{
 		// 	aspect-ratio(3:4)

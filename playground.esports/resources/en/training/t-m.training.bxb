@@ -1,15 +1,5 @@
-train (t-mdxvh4biysqpv880tdh32w6il) {
-  utterance ("[g:My_search] show me any events coming up for (counter strike)[v:My_text_concept]")
-  plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
-  last-modified (1568763629537)
-}
-train (t-mw0jg9ddit2vjgay31cxi7rep) {
-  utterance ("[g:My_search] What games are gonna happen with (counter strike)[v:My_text_concept]")
-  plan (Y2Bm0M9KzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvqkJqaXpsYXpyYWJWcwaBPW4FsJU2xIlOKS1IoSoFhecmpBCQMTAyMQMwBJRgYQgPIB)
-  last-modified (1570143660073)
-}
-train (t-mwkwrtbpat9p4a3a0vs9mwdys) {
-  utterance ("[g:My_search] tell me what games I'm able to look at")
-  plan (jYtLCoAwEEOnehxB8R56hlLGoBX7oR1Rb283XesiCTxeqKVhN85CL+bKwfc4wJIsaw4uQqzYAieY9YTOMIk36r4P81Pl8ZcsuKUwz4hCDakSKq2I6r4=)
-  last-modified (1570145622674)
+train (t-m4njx4sd62m9c5dwfyf5wi4hn) {
+  utterance ("[g:My_text_concept:prompt] (counter strike)[v:My_text_concept:'Counter Strike']")
+  plan (Y2BiMMxKzM1MjU9JLC/Oz9NLzUlNLinKTI5Pzs8tSC3JLMkECvpWxpekVpQAxfKSUwtKyNHCCIQMDDxAzATEQDYA)
+  last-modified (1576453779868)
 }

@@ -1,7 +1,7 @@
 hints {
     uncategorized {
-        hint ("In Electric Sports, what games can I select.")
+        hint ("Start Electric Sports")
         hint ("With Electric Sports, tell me about Dota.")
-        hint ("Ask Electric Sports What's coming up for Counter Strike?")
+        hint ("With Electric Sports, tell me about Counter Strike")
     }
 }

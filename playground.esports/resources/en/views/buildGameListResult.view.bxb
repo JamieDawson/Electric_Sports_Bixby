@@ -11,7 +11,7 @@ input-view {
           page-size (size(this))
           page-content {
             underflow-statement (This is the first page)
-            item-selection-question (Select a category.)
+            item-selection-question (Which game would you like to select?)
             overflow-statement (This is the last page)
             overflow-question (What would you like to do?)
           }
@@ -30,4 +30,5 @@ input-view {
       }
     }
   }
+
 }

@@ -1,6 +1,12 @@
-text (My_text_concept) {
-  description (the name of the game we are requesting)
-  features{
-    transient
-  }
+// text (My_text_concept) {
+//   description (the name of the game we are requesting)
+//   features{
+//     transient
+//   }
+// }
+
+enum (My_text_concept) {
+  features{transient}
+  symbol (Dota)
+  symbol (Counter Strike)
 }

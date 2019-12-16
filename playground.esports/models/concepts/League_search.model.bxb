@@ -1,6 +1,6 @@
 structure (League_search) {
   description (Looks up all the leauges)
-
+  //features{transient} //CHECK LATER!
   //Name of compitition
   property (league_name) { 
     type (core.Text)

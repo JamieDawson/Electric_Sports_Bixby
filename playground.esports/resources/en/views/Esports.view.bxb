@@ -20,11 +20,13 @@ result-view{
       }
     }
 	} 
-	conversation-drivers{
-		if (size(esports) == 1){
-			conversation-driver{
-				template(back) //add "back" button when a tournament is selected.
-			}
-		}
-	}
+
+  conversation-drivers{
+    conversation-driver{
+      template ("Dota")
+    }
+    conversation-driver{
+      template ("Counter Strike")
+    }
+  }
 }
